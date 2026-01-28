@@ -7,14 +7,70 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, .title {
+h1, h2, h3, h4, .title, h5 {
   font-family: 'Poppins', sans-serif;
 }
-
+header{
+ 
+  position: relative;
+  height: 150px;
+}
 header img{
-    width:200px;
+    width:250px;
+    position: absolute;
+}
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome span{
+  max-width:52%;
+  text-align: center;
+}
+.orange{
+  color: #ff8200;
+  font-weight: bold;
 }
 
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  background-color: #1B1C1D;
+  padding: 80px;
+  padding-bottom: 30px;
+  border-radius: 40px;
+}
+.login-form form .login-autentication{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  
+}
+.login-form form .login-autentication input{
+  margin-bottom: 20px;
+  padding: 7px;
+}
+.login-form form .login-autentication button{
+  padding: 7px;
+  background-color: #ff8200;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid #ff8200;
+}
+.login-form form .login-autentication button:hover{
+  cursor: pointer;
+}
 .divisor {
   display: flex;
   align-items: center;
@@ -48,4 +104,32 @@ header img{
 
 .google-auth img {
   width: 18px;
+}
+
+.login-form .cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.login-form .cadastro a{
+  color: #ff8200;
+  text-decoration: none;
+  border: 1px solid #ff8200;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.login-form .cadastro a:hover{
+  background-color: #ff8200;
+  color: white;
+}
+
+footer{
+  border-top: 1px solid white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
