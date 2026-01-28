@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promto/login</title>
+    <link rel="stylesheet" href="/css/login.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><img src="/img/logo-escrito-sem-fundo.png" alt="Logo PROMto"></header>
+    <div class="login-form">
+        <form method="POST">
+
+             <!--Form principal-->
+            <div class="login-autentication">           
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" required>
+                <button>Entrar</button>
+            </div>
+
+            <!--Divisor-->
+            <div class="divisor">
+                <hr><span>ou</span><hr>
+            </div>
+
+            <!--Botão de autenticação do google-->
+            <div class="google-auth">
+                <button class="google-auth"><img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">Continuar com Google</button>
+            </div>
+
+            <!--Botao cadastro-->
+
+            <div class="cadastro">
+                <a href="#">Cadastre-se!</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
