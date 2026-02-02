@@ -1,0 +1,19 @@
+@import url('style.css');
+@import url('login.css');
+
+.formulario-cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+
+form{
+display: flex;
+  flex-direction: column;
+  background-color: #1B1C1D;
+  padding: 80px;
+  padding-bottom: 30px;
+  border-radius: 40px;
+}

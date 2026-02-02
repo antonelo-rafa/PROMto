@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROMto - Login</title>
-    <link rel="stylesheet" href="/static/css/login.css">    
+    <title>PROMto - Cadastro</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">    
        <link rel="icon" href="/static/img/icone.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,28 +12,27 @@
 </head>
 <body>
     <header><img src="/static/img/logo-escrito-sem-fundo.png" alt="Logo PROMto"></header>
-    <div class="welcome">
-        <h1>Bem vindo ao <span class="orange">PROMto!</span></h1>
-        <span>Pare de perder tempo ajustando <span class="orange">prompts</span>. Aqui você encontra e gera prompts estratégicos para obter respostas mais precisas, úteis e profissionais com <span class="orange">qualquer IA.</span></span>
+     <div class="welcome">
+        <h1>Cadastro <span class="orange">PROMto!</span></h1>
+        <span>A plataforma que transforma ideias em <span class="orange">prompts prontos</span>, bem estruturados e otimizados para você obter respostas melhores<span class="orange"> da sua IA favorita.</span></span>
     </div>
     <div class="login-form">
         <form method="POST" action = '/login'>
-             <!--Form principal-->
-            <div class="login-autentication">           
+            <div class="login-autentication">
+                <form action="/home">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
-                <button>Entrar</button>
-            </div>            <!--Divisor-->
+                <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+                <button>Cadastrar</button>
+            </div>
             <div class="divisor"><hr><span>ou</span><hr></div>
-            <!--Botão de autenticação do google-->
             <div class="google-auth">
                 <button class="google-auth"><img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">Continuar com Google</button>
-            </div>
-            <!--Botao cadastro-->
-            <div class="cadastro">
-                <a href="#">Cadastre-se!</a>
             </div>
         </form>
     </div>
@@ -42,6 +41,5 @@
             <h5>Todos os direitos reservados &copy; 2026 - <span class="orange">PROMto</span></h5>
         </div>
     </footer>
-
 </body>
 </html>
