@@ -5,11 +5,6 @@ def conexao_banco():
         user = 'root',
         password = 'root',
         port='8889',
-        database = 'login2'
+        database = 'promto'
     )
     return conexao
-
-conexao = conexao_banco()
-cursor = conexao.cursor()
-
-print(conexao, 'conectado com sucesso')
