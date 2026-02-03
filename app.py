@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, flash 
+from bd import conexao_banco
 
 app = Flask(__name__, template_folder='html')
 app.secret_key = 'admin-promto'
